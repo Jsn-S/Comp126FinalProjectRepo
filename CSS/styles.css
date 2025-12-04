@@ -172,3 +172,51 @@ footer {
   border-radius: 8px;
   margin-top: 1.5rem;
 }
+
+/* Sticky header only for menu page! (I cooked with this hehe) */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Modular Menu Grid (absolute effing nightmare why did I do this???) */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+/* adds really cute little 'hop' when hovering :) */
+.menu-item:hover, .menu-item:focus {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.menu-item h2 {
+  color: #8d6e63;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
