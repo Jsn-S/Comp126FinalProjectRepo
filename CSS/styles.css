@@ -1,0 +1,128 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures full viewport height */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8f5e9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #a8d5baff;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Main content expands to push footer down */
+main {
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2rem;
+  text-align: center;
+  min-height: 70vh; /* fills most of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #8d6e63;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.buttons a {
+  background-color: #8d6e63;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover,
+.buttons a:focus {
+  background-color: #a8d5baff;
+  color: #000;
+}
+
+/* Sticky Footer */
+footer {
+  background-color: #a8d5baff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+}
+  
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .buttons a {
+    font-size: 1rem;
+  }
+}
