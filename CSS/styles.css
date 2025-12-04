@@ -128,7 +128,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  position: sticky;
+  position: static;
   bottom: 0;
 }
   
@@ -141,4 +141,34 @@ footer {
   .buttons a {
     font-size: 1rem;
   }
+}
+
+/* All about little ol' meeeeeeee */
+.about {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.about h2 {
+  color: #8d6e63;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1.5rem;
 }
